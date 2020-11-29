@@ -27,8 +27,8 @@
 							Choisissez votre saveur parmi notre large panel de goûts.
 						</p>
 						<ul class="actions">
-							<li><a href="../saveurs/index.html" class="button big" target="_blank">NOS SAVEURS</a></li>
-							<li><a href="../tarifs/index.html" class="button big" target="_blank">NOS TARIFS</a></li>
+							<li><a href="./saveurs/index.html" class="button big" target="_blank">NOS SAVEURS</a></li>
+							<li><a href="./tarifs/index.html" class="button big" target="_blank">NOS TARIFS</a></li>
 						</ul>
 					</section>
 
@@ -44,7 +44,12 @@
 							<li><a href="https://www.instagram.com/chich_a_dom/" class="icon fa-instagram"><span class="label">Instagram</span></a></li> 
 						 </p>
 						 
-
+						 <form action="./mail.php" method="POST">
+							<p>Name</p> <input type="text" name="name">
+							<p>Email</p> <input type="text" name="email">
+							<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+							<input type="submit" value="Send"><input type="reset" value="Clear">
+							</form>
 
 					</ul>
 				</section>
