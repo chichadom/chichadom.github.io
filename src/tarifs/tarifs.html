@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="utf-8"> -->
+    <style>
+        .inside_body_block
+        {
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .upcolor
+        {
+            height: 10%;
+            /* background-color: rgb(75, 53, 117); /* Le fond de la page sera noir */
+            /*color: rgb(107, 72, 233); /* Le texte de la page sera blanc */
+
+        }
+
+        .bottomcolor
+        {
+            height: 10%;
+            /* background-color: rgb(75, 53, 117); /* Le fond de la page sera noir */
+            /*color: rgb(107, 72, 233); /* Le texte de la page sera blanc */
+            margin: auto;
+
+        }
+
+        p
+        {
+            margin-bottom: 2em;
+        }
+
+        .tableau_prix{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin: auto;
+            display: table;
+        }
+
+        table{
+            border-collapse: collapse
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+
+                /* Style inputs */
+        input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        }
+
+        input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+        /* Style the container/contact section */
+        .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+        }
+
+        /* Create two columns that float next to eachother */
+        .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        .column, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+        }
+</style>
+</head>
+
+<body>
+
+<ul id=menu>
+    <li><a href="../index/index.html">Accueil</a>
+    <li><a href="../saveurs/saveurs.html">Saveurs</a>
+</ul>
+
+
+<div class='leftcolor'></div>
+
+
+<div class='upcolor'></div>
+
+<div class='inside_body_block'>
+    <img class='image' src="../../data/map/FINAL.png" alt="zones" height="700" width="1100" />
+    <div class='tableau_prix'>
+        <table>
+            <tr>
+              <td>1 CHICHA</td>
+              <td>2 CHICHAS</td>
+            </tr>
+            <tr>
+              <td>2 recharges : 25€</td>
+              <td>4 recharges : 40€</td>
+              <td>ZONE 1</td>
+            </tr>
+            <tr>
+              <td>2 recharges : 40€</td>
+              <td>4 recharges : 55€</td>
+              <td>ZONE 2</td>
+            </tr>
+            <tr>
+                <td>DEVIS</td>
+                <td>DEVIS</td>
+                <td>ZONE 3</td>
+              </tr>
+          </table>
+    </div>
+
+
+    <div id="text_after_tableau"> 
+        <p>+10 € par recharge supplémentaire. </p>
+        <p>Une caution de 50 € ou pièce d’identité sera exigée à la livraison.</p>
+    </div>
+    
+</div>
+
+
+<div class="container">
+    <h2>Contact</h2>
+    <div id="text_before_formulaire"> Pour un devis, contactez-nous au 0651323494, instagram ou via notre formulaire : </div>
+
+    <div class="row">
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<div class='bottomcolor'></div>
+
+
+
+
+
+</body>
+</html>
